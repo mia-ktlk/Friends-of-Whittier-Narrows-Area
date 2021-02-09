@@ -1,0 +1,63 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    /* Header */
+    .header {
+        height: 50vh;
+    }
+    img.header-logo {
+        width: 200px;
+        padding-top: 6rem;
+    }
+    .col-12.section-header.white.right {
+        font-size: 40px;
+        text-align: center;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    .col-12.section-header.contact-left {
+        font-size: 40px;
+        text-align: center;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    /* About */
+    img.building-gif {
+        width: 200px;
+    }
+
+    .section-text {
+        color: white;
+        font-size: 15px;
+    }
+
+    /* Team */
+
+    .col-12.section-header.ourteam-left {
+        font-size: 40px;
+        text-align: center;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    /* Services */
+    .dropdown.about-item {
+        padding-bottom: 1.5rem;
+        padding-top: 1.5rem;
+    }
+    img.services-icon.img-fluid {
+        width: 200px;
+    }
+    h3.white.services-text {
+        color: orange !important;
+    }
+    ul.text-left.white.services-more.synthese {
+        padding-left: 5rem;
+    }
+
+    /* Contact */
+    section#contact {
+        height: 100vh;
+    }
+}

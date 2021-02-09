@@ -1,0 +1,23 @@
+/*!
+ *  by Mia Kotalik - http://miakotalik.com/
+ */
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+    height: 300%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    color: black;
+    background-size: cover;
+    background-color: white;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.particles-js-canvas-el {
+    position: absolute;
+}

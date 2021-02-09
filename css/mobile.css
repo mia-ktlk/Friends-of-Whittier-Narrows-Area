@@ -1,0 +1,45 @@
+@media only screen and (max-width: 600px) {
+    .header {
+        height: 50vh;
+    }
+    img.header-logo {
+        width: 200px;
+        padding-top: 130%;
+    }
+    .section-header {
+        font-size: 50px;
+        text-align: center !important;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    /* About Section */
+    img.building-gif {
+        width: 350px;
+        padding-left: 2rem;
+    }
+
+    /* about text bottom padding */
+    .col-12.section-text.synthese {
+        padding-bottom: 3rem;
+    }
+
+    /* Services Section */
+    img.services-icon.img-fluid {
+        width: 250px;
+    }
+
+    /* Contact Section */
+    form#contactForm {
+        padding-bottom: 5rem;
+    }
+
+    /* Footer */
+    .col-lg-6.icons {
+        padding-top: 0.5rem;
+    }
+}

@@ -1,0 +1,320 @@
+/* Show desktop or mobile based on screen */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .content-desktop {
+        display: none;
+    }
+    .content-mobile {
+        display: block;
+    }
+    .content-xs {
+        display: block;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .content-desktop {
+        display: none;
+    }
+    .content-xs {
+        display: none;
+    }
+    .content-mobile {
+        display: block;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .content-desktop {
+        display: none;
+    }
+    .content-mobile {
+        display: block;
+    }
+    .content-xs {
+        display: none;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .content-desktop {
+        display: block;
+    }
+    .content-mobile {
+        display: none;
+    }
+
+    .content-xs {
+        display: none;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .content-desktop {
+        display: block;
+    }
+    .content-mobile {
+        display: none;
+        overflow-x: hidden;
+    }
+
+    .content-xs {
+        display: none;
+    }
+}
+
+.bg-dark {
+    background-color: black !important;
+}
+.portfolio {
+    padding-left: 105px;
+}
+
+#portfolio {
+    padding-top: 100px;
+}
+
+#aboutPanel,
+#bookPanel,
+#contactPanel,
+#buyPanel {
+    font-size: 20px;
+    padding: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: none;
+}
+
+.submit-pay {
+    margin-top: 30px;
+}
+
+.contact-form {
+    padding-left: 60px;
+}
+
+.print-price {
+    margin-top: 20px;
+}
+
+.print-pic {
+    transition: transform 0.2s;
+}
+.print-pic:hover {
+    transform: scale(1.05);
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  Loader
+/*-----------------------------------------------------------------------------------*/
+
+.loader {
+    display: block;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url("../img/loader.gif") 50% 50% no-repeat white;
+    background-size: 500px;
+}
+
+.a {
+    text-decoration: none;
+    color: white !important;
+}
+
+.white {
+    color: white;
+}
+
+.mobile-team {
+    width: 18rem;
+}
+
+.header {
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 1;
+}
+
+body {
+    background-color: white;
+}
+
+/* Use this for adjusting the slanted lines
+https://bennettfeely.com/clippy/ */
+
+#about {
+    background-color: #003399;
+}
+
+#ourteam {
+    background-color: white;
+}
+
+#services {
+    background-color: #003399;
+}
+
+#contact {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.libre-caslon {
+    font-family: "Libre Baskerville", serif;
+}
+
+.raleway {
+    font-family: "Raleway", sans-serif;
+}
+
+.header-font {
+    font-size: 60px !important;
+}
+
+.main-nav {
+    padding-bottom: 20px;
+}
+.mn-item {
+    color: black;
+}
+
+.mn-item:hover {
+    color: #e24b20;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: #e24b20 !important;
+    border-color: #e24b20 !important;
+}
+
+.text {
+    font-family: "Raleway", sans-serif;
+    color: black;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: rgba(225, 225, 225, 0.85);
+}
+
+.grid-item:hover .overlay {
+    opacity: 1;
+}
+
+ul.header-l {
+    position: absolute;
+    list-style-type: none;
+    z-index: 1;
+    margin: 0;
+    color: black;
+    text-transform: lowercase;
+    font-style: normal;
+}
+
+a.header-li {
+    color: black !important;
+}
+a.header-li:hover {
+    color: #ff9900 !important;
+    text-decoration: none;
+    font-style: italic;
+}
+
+.services-more {
+    list-style-type: none;
+}
+
+.section-header {
+    font-family: Garamond Premier Pro;
+    font-style: normal;
+    font-weight: bold;
+}
+.section-text {
+    color: white;
+    font-size: 30px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-family: Synthese;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 35px;
+    color: black;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1.4px solid black;
+    border-radius: 0rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.mail-header {
+    padding-bottom: 15px;
+}
+
+.footer-a {
+    text-decoration: none !important;
+    color: #e24b20 !important;
+}
+
+textarea.form-control {
+    height: 11.7rem;
+}
+
+.btn-contact {
+    background-color: #003399;
+}
+
+.btn-contact:hover {
+    background-color: rgb(255, 153, 0);
+}
+
+.mailing-list {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.footer {
+    padding-bottom: 1.2rem;
+    background-color: black !important;
+    color: white;
+}
+
+footer.footer {
+    padding-top: 1rem;
+}
+
+#content-desktop {
+    display: block;
+}
+#content-mobile {
+    display: none;
+}

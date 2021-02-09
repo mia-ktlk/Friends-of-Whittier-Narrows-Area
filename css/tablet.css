@@ -1,0 +1,75 @@
+@media only screen and (min-width: 768px) {
+    img.header-logo {
+        width: 400px;
+        padding-top: 130%;
+    }
+    .section-header {
+        font-size: 50px;
+        text-align: center !important;
+        padding-bottom: 2rem;
+        padding-top: 9rem;
+        padding-right: 18rem;
+    }
+
+    .header {
+        height: 60vh !important;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    /* About Section */
+
+    #about {
+        height: 55vh;
+    }
+
+    .about-building {
+        padding-top: 50px;
+    }
+
+    img.building-gif {
+        width: 350px;
+        padding-left: 2rem;
+    }
+
+    /* about text bottom padding */
+    .col-12.section-text.synthese {
+        padding-bottom: 3rem;
+    }
+
+    /* Our Team Section */
+    #ourteam {
+        height: 70vh;
+    }
+
+    /* Services Section */
+    #services {
+        height: 80vh;
+    }
+    .services {
+        padding-top: 2rem;
+    }
+    img.services-icon.img-fluid {
+        width: 250px;
+    }
+
+    .dropdown-content {
+        display: block;
+    }
+
+    /* Contact Section */
+    #contact {
+        height: 50vh;
+    }
+
+    form#contactForm {
+        padding-bottom: 5rem;
+    }
+
+    /* Footer */
+    .col-lg-6.icons {
+        padding-top: 0.5rem;
+    }
+}

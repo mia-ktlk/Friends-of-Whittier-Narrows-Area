@@ -1,0 +1,68 @@
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    /* Header */
+    .header {
+        height: 90vh;
+    }
+    img.header-logo {
+        width: 450px;
+        padding-top: 6rem;
+    }
+    .col-12.section-header.white.right {
+        font-size: 40px;
+        text-align: center;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    .col-12.section-header.contact-left {
+        font-size: 40px;
+        text-align: center;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    /* About */
+    .section-text {
+        color: white;
+        font-size: 20px;
+    }
+    .dropdown.about-item {
+        padding-bottom: 1.5rem;
+        padding-top: 1.5rem;
+    }
+
+    img.building-gif {
+        width: 300px;
+    }
+
+    /* Team */
+
+    section#ourteam {
+        height: 150vh;
+    }
+    p.synthese.team-text {
+        padding-top: 3rem;
+    }
+    img.hanieka {
+        padding-left: 3rem;
+        width: 350px;
+        padding-bottom: 6rem;
+    }
+
+    /* Services */
+    h3.white.services-text {
+        color: orange !important;
+    }
+    ul.text-left.white.services-more.synthese {
+        padding-left: 15rem;
+    }
+
+    img.services-icon.img-fluid {
+        width: 300px;
+    }
+
+    section#contact {
+        height: 65vh;
+    }
+}
