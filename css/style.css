@@ -175,7 +175,7 @@ https://bennettfeely.com/clippy/ */
 }
 
 .header-font {
-    font-size: 60px !important;
+    font-size: 50px !important;
 }
 
 .main-nav {
@@ -317,4 +317,53 @@ footer.footer {
 }
 #content-mobile {
     display: none;
+}
+
+.carousel-item {
+    max-height: 33rem;
+    min-height: 33rem;
+}
+
+p.carousel-text {
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '￫';
+  transform: rotate(-90deg) !important;
+  font-size: 55px;
+  color: black;
+}
+
+.carousel-control-prev-icon:after {
+  content: '￩';
+  font-size: 55px;
+  color: black;
+}
+
+.carousel-indicators .active{
+    background-color: black;
+}
+
+.carousel-indicators li {
+    background-color: gray;
+}
+
+a {
+    cursor: pointer;
+}
+
+::selection {
+    background-color: rgb(226, 75, 32);
+    color: #fff;
 }

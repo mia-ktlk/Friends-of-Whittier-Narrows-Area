@@ -1,387 +1,195 @@
 <!-- Example Code -->
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>Watson Photography Co</title>
-
-  <!--JQuery -->
-  <!-- load jQuery 3.5.1 -->
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script type="text/javascript">
-    var jQuery_3_5_1 = $.noConflict(true);
-  </script>
-
-  <!-- load jQuery Slim -->
-  <script type="text/javascript" src="vendor/jquery/jquery.slim.min.js"></script>
-  <script type="text/javascript">
-    var jQuery_slim = $.noConflict(true);
-  </script>
-
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Font Awesome icons (free version)-->
-  <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
-
-  <!-- Custom CSS -->
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/masonry.css" rel="stylesheet">
-  <link href="css/xs.css" rel="stylesheet">
-  <link href="css/small.css" rel="stylesheet">
-  <link href="css/medium.css" rel="stylesheet">
-  <link href="css/large.css" rel="stylesheet">
-
-
-  <link rel="stylesheet" media="screen" href="css/particlestyle.css">
-
-  <link rel="stylesheet" href="css/slidein.css">
-  <link rel="stylesheet" href="css/responsive.css">
-  <link rel="stylesheet" href="css/flipimage.css">
-
-
-  <!-- Google Fonts-->
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Raleway:wght@300&display=swap"
-    rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-  <script src="js/masonry.js"></script>
-  <!-- MDBootstrap Masonry  -->
-  <script type="text/javascript" src="vendor/MDB/js/addons/masonry.pkgd.min.js"></script>
-  <script type="text/javascript" src="vendor/MDB/js/addons/imagesloaded.pkgd.min.js"></script>
-
-
-  <!-- Favicons-->
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
-  <link rel="manifest" href="/favicon_io/site.webmanifest">
-
-</head>
-
-<body>
-
-  <div class="section" id="portfolio">
-    <div class="container-fluid">
-      <h1 class="header-font my-4 libre-caslon text-center">Watson Photography Co.</h1>
-      <h3 class="main-nav raleway text-center">
-        <a href="#" id="flip" class="mn-item about">about </a>|
-        <a href="#" id="buyFlip" class="mn-item buyprints">buy prints</a> |
-        <a href="#" id="bookFlip" class="mn-item book">book a session</a> |
-        <a href="#" id="contactFlip" class="mn-item contact">contact</a>
-      </h3>
-
-      <!-- ABOUT -->
-      <div id="aboutPanel" class="raleway panel">
-        <div class="row">
-          <div class="col-3">
-            <img class="img-fluid" src="img/lorraine.jpg" style="width: 90%">
-          </div>
-          <div class="col-9">
-            <p class="about-text">
-              Watson Photography Co. was founded in 2005 by me Lorraine Watson. I am
-              originally from
-              Granville,
-              Ohio but I moved to Chicago in 2007 to get a taste of the big city. I love telling the stories of people
-              from
-              all different backgrounds through my photography. Book a site with me so I can see the world through your
-              lens!
-            </p>
-            <p class="about-text">
-              Not quite ready to book yet? No problem! Leave me a message on my contact page and we can set up a free
-              consult to discuss your photography needs. I am so excited to meet you!
-            </p>
-          </div>
-        </div>
-      </div>
-
-
-      <!-- BUY -->
-      <div id="buyPanel" class="raleway panel">
-        <div class="row">
-          <div class="col-12  col-md-4 text-center"
-            onclick="return confirm('This is a demo website only. The store feature has been deactivated. ')">
-            <h2 class="text-center">Small Prints</h2>
-            <img class="img-fluid print-pic" src="img/print2.jpg" style="width: 90%">
-            <h5 class="text-center print-price">starting at $10</h2>
-          </div>
-          <div class="col-12  col-md-4 text-center"
-            onclick="return confirm('This is a demo website only. The store feature has been deactivated. ')">
-            <h2 class="text-center">Medium Prints</h2>
-            <img class="img-fluid print-pic" src="img/print3.jpg" style="width: 90%">
-            <h5 class="text-center print-price">starting at $30</h2>
-          </div>
-          <div class="col-12  col-md-4 text-center"
-            onclick="return confirm('This is a demo website only. The store feature has been deactivated. ')">
-            <h2 class="text-center">Large Prints</h2>
-            <img class="img-fluid print-pic" src="img/print1.jpg" style="width: 90%">
-            <h5 class="text-center print-price">starting at $45</h2>
-          </div>
-        </div>
-      </div>
-
-      <!-- BOOK -->
-      <div id="bookPanel" class="raleway panel">
-        <div class="row">
-          <div class="col-12">
-            <div class="container">
-              <form>
-
-                <div class="row">
-                  <div class="col-12 col-md-6 col-lg-6">
-                    <h3>Session Info</h3>
-                    <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="John M. Doe" required> <br>
-                    <label for="email"><i class="fa fa-envelope"></i> Email</label>
-                    <input type="text" id="email" name="email" placeholder="john@example.com" required> <br>
-                    <label for="date"><i class="fa fa-calendar"></i> Date</label>
-                    <input type="date" id="date" name="date"><br>
-                    <label for="time"><i class="fa fa-clock"></i> Starting time</label>
-                    <input type="time" id="time" name="time" min="09:00" max="18:00" required> <br>
-                    <label for="session"><i class="fa fa-camera"></i> Session type</label>
-                    <select id="session" name="session" required>
-                      <option value="mini session">mini session | $90</option>
-                      <option value="saab">1-hour | $200</option>
-                      <option value="fiat">3-hour | $350</option>
-                      <option value="audi">12-hour | $1,200</option>
-                    </select>
-                    <label for="more">Is there anything I need to know about the session?</label>
-                    <textarea id="more" name="more" rows="4" cols="50">
-</textarea>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>Friends of Whittier Narrows Area</title>
+      <!--JQuery -->
+      <!-- load jQuery 3.5.1 -->
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script type="text/javascript">
+         var jQuery_3_5_1 = $.noConflict(true);
+      </script>
+      <!-- load jQuery Slim -->
+      <script type="text/javascript" src="vendor/jquery/jquery.slim.min.js"></script>
+      <script type="text/javascript">
+         var jQuery_slim = $.noConflict(true);
+      </script>
+      <!-- Bootstrap core CSS -->
+      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Font Awesome icons (free version)-->
+      <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+      <!-- Custom CSS -->
+      <link href="css/style.css" rel="stylesheet">
+      <link href="css/masonry.css" rel="stylesheet">
+      <link href="css/xs.css" rel="stylesheet">
+      <link href="css/small.css" rel="stylesheet">
+      <link href="css/medium.css" rel="stylesheet">
+      <link href="css/large.css" rel="stylesheet">
+      <link rel="stylesheet" media="screen" href="css/particlestyle.css">
+      <link rel="stylesheet" href="css/slidein.css">
+      <link rel="stylesheet" href="css/responsive.css">
+      <link rel="stylesheet" href="css/flipimage.css">
+      <!-- Google Fonts-->
+      <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Raleway:wght@300&display=swap"
+         rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="js/masonry.js"></script>
+      <!-- MDBootstrap Masonry  -->
+      <script type="text/javascript" src="vendor/MDB/js/addons/masonry.pkgd.min.js"></script>
+      <script type="text/javascript" src="vendor/MDB/js/addons/imagesloaded.pkgd.min.js"></script>
+      <!-- Favicons-->
+      <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+      <link rel="manifest" href="/favicon_io/site.webmanifest">
+   </head>
+   <body>
+      <section>
+         <div class="container-fluid">
+         <h1 class="header-font my-4 libre-caslon text-center">Friends of Whittier Narrows Area</h1>
+         <h3 class="main-nav raleway text-center">
+            <a data-target="#carouselExampleIndicators" data-slide-to="0">about </a>|
+            <a data-target="#carouselExampleIndicators" data-slide-to="1">threat</a> |
+            <a data-target="#carouselExampleIndicators" data-slide-to="2">alert & action</a> |
+            <a data-target="#carouselExampleIndicators" data-slide-to="3">contributors</a> |
+            <a data-target="#carouselExampleIndicators" data-slide-to="4">trial</a>
+         </h3>
+         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+            <ol class="carousel-indicators">
+               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+               <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+               <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+               <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+               <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="col-12">
+                     <p class="carousel-text">In the midst of overdeveloped Greater Los Angeles, is the last 40 miles of natural river from the San Gabriel 
+                        Mountains to the ocean.  This Natural Area has over 300 species of birds.  It was described by a local woman as, 
+                        “Our Yosemite.”  A young local man said when he visited, he was in awe to see more than one tree together like a forest.  
+                        Before that, he had only seen a tree in a person’s yard.  Local people had grown up visiting this little piece of natural area,
+                        open space, with their families.   The location has hosted innumerable field trips for schools and groups like Boy Scouts.  
+                        It is the location of Mexican American history.  It is the first Audubon Center  west of the Mississipi. 
+                        It is an outdoor classroom for flora and fauna.  Finally, the Kizh, San Gabriel Band of Mission Indians calls it their historical sacred land. 
+                     </p>
                   </div>
-
-                  <div class="col-12 col-md-6 col-lg-6">
-                    <h3>Payment</h3>
-                    <label for="fname">Accepted Cards</label>
-                    <div class="icon-container">
-                      <i class="fab fa-cc-visa" style="color:navy;"></i>
-                      <i class="fab fa-cc-amex" style="color:blue;"></i>
-                      <i class="fab fa-cc-mastercard" style="color:red;"></i>
-                      <i class="fab fa-cc-discover" style="color:orange;"></i>
-                    </div>
-                    <label for="cname">Name on Card</label>
-                    <input type="text" id="cname" name="cardname" placeholder="John More Doe" required>
-                    <label for="ccnum">Credit card number</label>
-                    <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required> <br>
-                    <label for="expmonth">Exp Month</label>
-                    <input type="text" id="expmonth" name="expmonth" placeholder="September" required>
-
-                    <div class="row">
-                      <div class="col-12 col-md-6 col-lg-12">
-                        <label for="expyear">Exp Year</label>
-                        <input type="text" id="expyear" name="expyear" placeholder="2020" required>
-                      </div>
-                      <div class="col-12 col-md-6 col-lg-12">
-                        <label for="cvv">CVV</label>
-                        <input type="text" id="cvv" name="cvv" placeholder="352" required>
-                      </div>
-                      <div class="col-12 col-md-6 col-lg-12">
-                        <button type="submit" class="btn btn-primary mb-2 submit-pay"
-                          onclick="return confirm('This is a demo website only. This form has been deactivated.')">Submit
-                          and Pay</button>
-                      </div>
-                    </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="col-12">
+                     <p class="carousel-text">
+                        In the fall of 2006 Grace Allen, president of the WNNC Associates informed  of an agency who was planning to demolish the Whittier Narrows Nature Center and 
+                        replace it with a new building which they would be called the San Gabriel  River Discovery Center  (DC).  Simultaneously, they would destroy at least 29 trees 
+                        that were in their way.  In later stages, they would destroy more trees.   
+                     </p>
                   </div>
-
+               </div>
+               <div class="carousel-item">
+                  <div class="col-12">
+                     <p class="carousel-text">
+                        They recruited Dr Jack Bath, Biologist, and me, James Odling, Biologist, to try to stop this project.  We went to the Scoping Meeting in the fall of 2006.   
+                        At first, we were an informal group.  But in 2007 we thought we needed a law suit to stop them.  Then we formed a nonprofit, Friends of Whittier Narrows Natural Area (Friends)  
+                        so people would see we were serious in  Aug 2007. 
+                        During these years  Friends continued to provide information to the community.  Friends organized at WN:   Art shows, Poetry reading, community picnics, 2015 informational pickets,
+                        Spoke at schools.  On Earth Days away, we had tables where we presented information about WN.  The DC officials threatened us and told us to leave.  We informed them of our free speech 
+                        rights and stayed.  We participated on a speaker on danger of mosquitos in wetland by a Vector specialist.
+                        We also assisted in the river cleanup sponsored by the NC Associates and others.
+                     </p>
+                     <p class="carousel-text">
+                      SEATAC.   In 2007 to 2008 the Significant Ecological Area Technical Advisory  Committee  was meeting on if they would or not recommend the project.  On May 5, 2008 they voted not to 
+                      recommend the project after several  meetings.  Dr  Jack said Gloria Molina had said she would abide by their decision.  The DC had thought they were going to win this; they had thought 
+                      it a perfunctory step and one they had assured themselves had an outcome in their favor.  
+                      In July of 2009 there were the CEQA hearings at the South El Monte High School.  We hired a lawyer  Marcia Wertenberger.  
+                      Throughout this period we were going to DC  board meetings regularly.  We began to video the meetings and post excerpts of them to youtube channels.  
+                      It was a good idea because they could not dispute recorded information for the public to see.  
+                     </p>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                <div class="col-12">
+                   <p class="carousel-text">
+                        SOUTH EL MONTE HIGH SCHOOL AND RIO HONDO STUDENTS.  From the beginning, we had participation from Rio Hondo students. 
+                        The high school had formed the Emerald Necklace club on campus and developed a petition against the DC’s development at WN.
+                        KIZH BAND OF SAN GABRIEL MISSION INDIANS.  In 2010 the Kizh became part of the efforts to save their sacred land at WN.  Margo
+                        was instrumental in informing them of the threat. DC.  On January 20, 2010 the D C voted to build the preferred alternative:   14,000 sq ft facility and 114 space parking lot.   
+                        In the vote, they overload the following:   destruction of existing natural area, affecting endangered birds, use of more global water, and contributing to climate change.   
+                        Their rationalization was that it was more  “important for the children.”
+                        CEQA.  That’s when we began our CEQA suit.  In 2011 we handed in a petition against the DC signed by 1100 people to the DC.  
+                        At the same time they were setting up staged meetings at campuses, meetings  not discussed at Board meetings so that they could keep the information from us. 
+                        But, we found out anyway because we kept tabs on the internet announcements posted at the last minute.
+                   </p>
                 </div>
-                <label>
-              </form>
+             </div>
+               <div class="carousel-item">
+                  <div class="col-12">
+                     <p class="carousel-text">
+                        Feb 2011 was the day of the trial.  We had a new lawyer:  Frank Angel.    We were the plaintiff and the DC  was the respondent.  The  DC was led by the Margaret Sahagi law firm.  
+                        On their team in the courtroom is Executive Director for both  the DC and the Rivers and Mountains Conservancy, Belinda Faustinos.  She had beens recently elected to CA Audubon Board.  
+                        The area for building is within the same area for at least one endangered species.  Audubon considers the area  an important birding area.  But Faustinos proposed paving and building on habitat for the Least Bells Vireo, 
+                        an endangered species, and Important  Birding Area.  Several  birds were also classified as “threatened” and “of concern,” per a report by Mickey Long, leading County Biologist for Parks, in 1998 and 1995.  Ann Croissant was part of that study.
+                        In the court that day evidence that  judge John Toribio and the lawyer Sahagi had happy talk regarding her change of name before the session began.  During the court session, our lawyer presented information about the endangered bird. 
+                        Judge Toribio said why stop this “good” project for “one little bird.”  When the hearing was over, lawyer Sahagi said to the judge, “Say hello to Amanda.”  The judge decided for the DC.  We did not appeal because of the cost and two of the three panels that we would be assigned were pro development.
+                     </p>
+                  </div>
+               </div>
             </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- CONTACT -->
-      <div id="contactPanel" class="raleway panel">
-        <div class="row">
-          <div class="col-12 col-md-5 col-lg-5">
-            <img class="img-fluid" src="img/phone.jpg" style="width: 130%">
-          </div>
-          <div class="col-12 col-md-7 col-lg-7 contact-form">
-            <h3>Send me a message!</h3>
-            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="John M. Doe"> <br>
-            <label for="email"><i class="fa fa-envelope"></i> Email</label>
-            <input type="text" id="email" name="email" placeholder="john@example.com"> <br>
-            <label for="more">Your message</label> <br>
-            <textarea id="more" name="more" rows="2" cols="50">
-</textarea>
-            <button type="submit" class="btn btn-primary mb-2 submit-pay"
-              onclick="return confirm('This is a demo website only. The form feature has been deactivated.')">Send
-              Message</button>
-          </div>
-        </div>
-      </div>
-
-
-      <div id="div1" class="portfolio text-center">
-        <div class="grid">
-          <div class="grid-sizer"></div>
-          <div class="grid-item js-slidein">
-            <img src="img/ared1.jpg" />
-            <div class="overlay">
-              <div class="text">on-site photo shoots</div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+            </a>
+         </div>
+      </section>
+      <!--Photo Gallery -->
+      <section id="gallery">
+         <div class="container text-center">
+            <div class="card-columns">
+               <div class="card"> <img class="card-img-top" src="img/destoryNature.jpg" alt=""> </div>
+               <div class="card"> <img class="card-img-top" src="img/interview.jpg" alt=""> </div>
+               <div class="card"> <img class="card-img-top" src="img/dontdestroy.jpg" alt=""> </div>
+               <div class="card"> <img class="card-img-top" src="img/meetingPlanning.jpg" alt=""> </div>
+               <div class="card"> <img class="card-img-top" src="img/localYoungpeople.jpg" alt=""> </div>
+               <div class="card"> <img class="card-img-top" src="img/speakForTrees.jpg" alt=""> </div>
+               <div class="card"> <img class="card-img-top" src="img/afterPicket.jpg" alt=""> </div>
+               <div class="card"> <img class="card-img-top" src="img/destory.jpg" alt=""> </div>
+               <div class="card"> <img class="card-img-top" src="img/treesnot.jpg" alt=""> </div>
+               <div class="card"> <img class="card-img-top" src="img/defendant.jpeg" alt=""> </div>
+               <div class="card"> <img class="card-img-top" src="img/corpmonsters.jpg" alt=""> </div>
+               <div class="card"> <img class="card-img-top" src="img/parking.jpg" alt=""> </div>
+               <div class="card"> <img class="card-img-top" src="img/morgan.jpg" alt=""> </div>
+               <div class="card"> <img class="card-img-top" src="img/kizhcheif.jpeg" alt=""> </div>
+               <div class="card"> <img class="card-img-top" src="img/Bulldozers.jpg" alt=""> </div>
+               <div class="card"> <img class="card-img-top" src="img/ernie.jpg" alt=""> </div>
+               <div class="card"> <img class="card-img-top" src="img/Confronting Supervisor.jpeg" alt=""> </div>
             </div>
-          </div>
-          <div class="grid-item js-slidein">
-            <img src="img/ared2.jpg" />
-          </div>
-          <div class="grid-item js-slidein">
-            <img src="img/ared3.jpg" />
-            <div class="overlay">
-              <div class="text">nature prints starting at $10</div>
+         </div>
+      </section>
+      <!-- Footer-->
+      <footer class="footer">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-lg-4 icons">
+                  <a class="btn btn-primary btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                  <a class="btn btn-primary btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+               </div>
             </div>
-          </div>
-          <div class="grid-item js-slidein">
-            <img src="img/ared4.jpg" />
-          </div>
-          <div class="grid-item js-slidein">
-            <img src="img/borange1.jpg" />
-          </div>
-          <div class="grid-item js-slidein">
-            <img src="img/borange2.jpg" />
-            <div class="overlay">
-              <div class="text">fun portrait sessions</div>
-            </div>
-          </div>
-          <div class="grid-item js-slidein">
-            <img src="img/borange3.jpg" />
-          </div>
-          <div class="grid-item js-slidein">
-            <img src="img/borange4.jpg" />
-          </div>
-          <div class="grid-item js-slidein">
-            <img src="img/cyellow1.jpg" />
-          </div>
-          <div class="grid-item js-slidein">
-            <img src="img/cyellow2.jpg" />
-          </div>
-          <div class="grid-item js-slidein">
-            <img src="img/cyellow3.jpg" />
-            <div class="overlay">
-              <div class="text" style="font-size: 20px">1 hour portrait sessions starting at $150</div>
-            </div>
-          </div>
-          <div class="grid-item js-slidein">
-            <img src="img/cyellow4.jpg" />
-          </div>
-          <div class="grid-item js-slidein">
-            <img src="img/dgreen1.jpg" />
-            <div class="overlay">
-              <div class="text">I love to travel for destination weddings</div>
-            </div>
-          </div>
-          <div class="grid-item js-slidein">
-            <img src="img/dgreen2.jpg" />
-            <div class="overlay">
-              <div class="text">landscape photography</div>
-            </div>
-          </div>
-          <div class="grid-item js-slidein">
-            <img src="img/dgreen3.jpg" />
-            <div class="overlay">
-              <div class="text">framed prints starting at $45</div>
-            </div>
-          </div>
-          <div class="grid-item js-slidein">
-            <img src="img/dgreen4.jpg" />
-          </div>
-          <div class="grid-item js-slidein">
-            <img src="img/eblue1.jpg" />
-          </div>
-          <div class="grid-item js-slidein">
-            <img src="img/eblue2.jpg" />
-          </div>
-          <div class="grid-item js-slidein">
-            <img src="img/eblue3.jpg" />
-            <div class="overlay">
-              <div class="text" style="font-size: 25px">want more info? send me a message</div>
-            </div>
-          </div>
-          <div class="grid-item js-slidein">
-            <img src="img/eblue4.jpg" />
-          </div>
-          <div class="grid-item js-slidein">
-            <img src="img/fpurple1.jpg" />
-            <div class="overlay">
-              <div class="text" style="font-size: 30px">photo session with furry friends</div>
-            </div>
-          </div>
-          <div class="grid-item js-slidein">
-            <img src="img/fpurple2.jpg" />
-            <div class="overlay">
-              <div class="text">book a session today!</div>
-            </div>
-          </div>
-          <div class="grid-item js-slidein">
-            <img src="img/fpurple3.jpg" />
-          </div>
-          <div class="grid-item js-slidein">
-            <img src="img/fpurple4.jpg" />
-          </div>
-        </div>
-      </div>
-
-      <!-- about -->
-
-
-    </div>
-  </div>
-
-  <section class="mailing-list">
-    <div class="container text-center">
-      <h2 class="libre-caslon text-center mail-header">Join my mailing list!</h2>
-      <h3 class="main-nav raleway text-center">Get exclusive offers and special events sent to your inbox. </h3>
-      <div class="col-12 text-center">
-        <label for="email"><i class="fa fa-envelope"></i> Email: </label>
-        <input type="text" id="email" name="email" placeholder="john@example.com" required>
-        <button type="submit" class="btn btn-primary mb-2"
-          onclick="return confirm('This is a demo website only. The newsletter feature has been deactivated. ')">Join!</button>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Footer-->
-  <footer class="footer">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-4 text-lg-left white">Copyright © <a class="footer-a" href="http://rmtwentynine.com/"
-            target="_blank">Rm 29
-          </a> 2020</div>
-        <div class="col-lg-4 icons">
-          <a class="btn btn-primary btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a><a
-            class="btn btn-primary btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a><a
-            class="btn btn-primary btn-social mx-2" target="_blank" href="https://www.instagram.com/rm29.designs/"><i
-              class="fab fa-instagram"></i></a>
-        </div>
-        <div class="col-lg-4 text-lg-left white">Enjoy this website? <br> Contact <a href="http://rmtwentynine.com/"
-            class="footer-a" target="_blank">Rm 29
-          </a>to get your own!</div>
-      </div>
-    </div>
-  </footer>
-
-
-  <!-- Template Main Javascript File -->
-  <script src="js/main.js"></script>
-
-
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-  <script src="js/slideIn.js"></script>
-
-
-</body>
-
+         </div>
+      </footer>
+      <!-- Template Main Javascript File -->
+      <script src="js/main.js"></script>
+      <!-- Bootstrap core JavaScript -->
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <!-- Plugin JavaScript -->
+      <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+      <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+      <script src="js/slideIn.js"></script>
+   </body>
 </html>
