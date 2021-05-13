@@ -137,5 +137,6 @@ jQuery_3_5_1(document).ready(function () {
 
 $(".main-nav a").click(function () {
   $(".main-nav a").css("color", "#000000");
-  $(this).css("color", "#e24b20");
+  $(this).css("color", "#1b663e");
+  $(this).css("font-weight", "bold");
 });

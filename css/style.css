@@ -175,24 +175,25 @@ https://bennettfeely.com/clippy/ */
 }
 
 .header-font {
-    font-size: 50px !important;
+    font-size: 55px !important;
 }
 
 .main-nav {
     padding-bottom: 20px;
+    font-size: 35px !important;
 }
 .mn-item {
     color: black;
 }
 
 .mn-item:hover {
-    color: #e24b20;
+    color: #0f3923;
     text-decoration: none;
 }
 
 .btn-primary {
-    background-color: #e24b20 !important;
-    border-color: #e24b20 !important;
+    background-color: #0f3923!important;
+    border-color: #0f3923 !important;
 }
 
 .text {
@@ -282,25 +283,14 @@ a.header-li:hover {
 
 .footer-a {
     text-decoration: none !important;
-    color: #e24b20 !important;
+    color: #0f3923 !important;
 }
 
 textarea.form-control {
     height: 11.7rem;
 }
 
-.btn-contact {
-    background-color: #003399;
-}
 
-.btn-contact:hover {
-    background-color: rgb(255, 153, 0);
-}
-
-.mailing-list {
-    padding-top: 50px;
-    padding-bottom: 30px;
-}
 
 .footer {
     padding-bottom: 1.2rem;
@@ -320,13 +310,14 @@ footer.footer {
 }
 
 .carousel-item {
-    max-height: 33rem;
-    min-height: 33rem;
+    min-height: 50rem;
 }
 
 p.carousel-text {
-    padding-left: 8rem;
-    padding-right: 8rem;
+    padding-left: 300px !important;
+    padding-right: 300px !important;
+    font-size: 22px !important;
+    line-height: 2 !important;
 }
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
@@ -364,6 +355,12 @@ a {
 }
 
 ::selection {
-    background-color: rgb(226, 75, 32);
+    background-color: #1b663e;
     color: #fff;
+    font-weight: bold;
+}
+
+.header-area {
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
